@@ -1,0 +1,95 @@
+
+
+
+
+.nav{
+    a{
+        text-decoration: none;
+    }
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    &-logo{
+        .line-r-top{
+            display: inline-block;
+            height: 30px;
+            width: 100%;
+            position: absolute;
+            top:-40%; left:30%;
+            background: white;
+            @include transform(rotate(45deg));
+          }
+          
+          .line-r-down{
+           display: inline-block;
+              height: 30px;
+              width: 100%;
+              position: absolute;
+              top: 87%;
+              left: 41%;
+              background: white;
+             
+              @include transform(rotate(-60deg));
+            }
+        height: 100%;
+        width: 13%;
+        min-width: 9rem;
+        overflow: hidden;
+        position: relative;
+        background-color: #5e642b82;
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Pacifico';
+        &:hover{
+            animation: logo 0.1s ease-in forwards;
+        }
+    
+        span:nth-child(1){
+            color: white;
+        }
+        span:nth-child(2){
+            color: green;
+        }
+        span:nth-child(3){
+            color: red;
+        }
+    }
+    &-links{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        justify-content: center;
+        li{
+            &:hover .line{
+                animation: nav-line 0.4s ease-in forwards;
+              }
+               &:hover {
+                @include transform(scale(1.1));
+              }
+              &:hover a {
+                color: rgba(0,0,0,0.8);
+              }
+            .line{
+                height: 2px;
+                width: 100%;
+                background: blue;
+                opacity: 0;
+            }
+            margin: 0;
+            padding: 0.5rem 2rem;
+            list-style: none;
+            
+            a{
+                color: #19719c;
+                font-size: 1.3rem;
+                font-family: 'Indie Flower', cursive;
+            }
+        }
+    }
+}
