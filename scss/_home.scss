@@ -1,6 +1,157 @@
-.introduction{
-    background-image: url('../img/summer.jpg');
-    height: 55vh;
-    background-size: cover;
-    background-position: center;
+.content{
+    .introduction:after{
+        background-image: url('../img/pizza.jpg');
+        opacity: 0.70;
+        z-index: -1;
+        content: '';
+        position: absolute;
+        top: 0; bottom: 0;
+        left: 0; right: 0;
+        background-size: cover;
+        background-position: center; 
+    }
+    .introduction{
+        position: relative;
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        padding: 4rem;
+      .heading{
+        text-align: center;
+        h2{
+            color: black;
+            font-size: 2.5rem;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 500;
+            font-style: italic;
+          span{
+            font-family: 'Pacifico';
+          }
+          span:nth-child(1){
+            color: green;
+          }
+           span:nth-child(2){
+            color: white;
+          }
+           span:nth-child(3){
+            color: red;
+          }
+           margin: 0;
+        }
+        .line{
+          display: inline-block;
+          width: 20%;
+          height: 3px;
+          background: black;
+        }
+      }
+      .description{
+          font-size: 1.1rem;
+          color: white;
+          font-weight: bold;
+          
+          font-size: 1.5rem;
+          width: 75%;
+          text-align: center;
+          margin: auto;
+          border-radius: 2rem;
+          background: rgba(0,0,0,0.35);
+        .logo{
+            font-family: 'Pacifico';
+            font-style: italic;
+            display: inline-block;
+            span:nth-child(1){
+                color: green;
+            }
+            span:nth-child(2){
+                color: white;
+            }
+            span:nth-child(3){
+                color: red;
+            }
+            span:last-child{
+                margin-right: 0.3rem;
+            }
+        }
+      }
+    }
+
+    .gallery{
+      
+       text-align: center;
+       img{
+        width: 9rem;
+        height: auto;
+        margin: 3rem 0;
+        }
+        
+        &-heading{
+            font-size: 1.3rem;
+            font-family: 'Indie Flower', cursive;
+            margin: 2rem;
+            span{
+                font-style: italic;
+                color: #ff3100;
+            }
+        }
+        &-container{
+            margin: auto;
+            width: 60%;
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            img{
+                margin: 0;
+            }
+            div:first-of-type img{
+                border: 1.5rem solid #0b5555;
+                height: 27.5rem;
+                width: auto;
+            }
+            div:nth-child(2) img{
+                height: 22.5rem;
+                width: auto;
+                box-shadow: 10px 10px 28px -5px rgba(0,0,0,1);
+            }
+            
+            div{
+                position: relative;
+                
+                &:hover{
+                    .hover{
+                        opacity: 1;
+                    }
+                }
+                .hover{
+                    background: rgba(227, 216, 216, 0.88);
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    display: flex;
+                    opacity: 0;
+                    align-items: center;
+                    justify-content: center;
+                    transition: opacity 0.3s ease;
+                    a{
+                        &:hover{
+                            background: #171817e8;
+                            
+                        }
+                        padding: 0.6rem 1.5rem;
+                        border-radius: 0.9rem;
+                        background: #575c57e8;
+                        color: white;
+                        transition: background 0.2s ease-in;
+                        text-decoration: none;
+                    }
+                }
+                
+            }
+           
+        }
+    }
 }
