@@ -17,4 +17,18 @@
       opacity: 1;
        @include transform(translateX(0));
     }
+}
+
+  @keyframes fade-in{
+    0%{
+      left: 64%;
+         top: -110%;
+    }50%{
+      left: 40%;
+            top: 0%;
+    }100%{
+      left: 0%;
+      top: 0%;
+      transform: rotate(0);
+    }
   }

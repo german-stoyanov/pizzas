@@ -1,14 +1,34 @@
 @import 'mixins.scss';
 @import 'animations.scss';
+@import 'https://use.fontawesome.com/releases/v5.5.0/css/all.css';
 @import 'https://fonts.googleapis.com/css?family=Pacifico';
 @import 'https://fonts.googleapis.com/css?family=Indie+Flower';
 @import 'https://fonts.googleapis.com/css?family=Ubuntu:500,500i';
 @import 'navigation.scss';
 @import 'home.scss';
+@import 'main.scss';
 
 
 
 body{
     padding: 0;
     margin: 0;
+}
+
+.logo{
+    font-family: 'Pacifico';
+    font-style: italic;
+    display: inline-block;
+    span:nth-child(1){
+        color: green;
+    }
+    span:nth-child(2){
+        color: white;
+    }
+    span:nth-child(3){
+        color: red;
+    }
+    span:last-child{
+        margin-right: 0.3rem;
+    }
 }
