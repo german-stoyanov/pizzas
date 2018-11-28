@@ -1,0 +1,62 @@
+@media screen and (max-width: 1024px){
+    html{
+        font-size: 14px;
+    }
+    .card{
+        .info{
+            width: 85%;
+        }
+    }
+}
+
+@media screen and (max-width: 960px){
+    .menu{
+        .card{
+            width: 27vw;
+            height: 42vw;
+            max-width: none;
+            max-height: none;
+            margin-bottom: 1.5rem; 
+        }
+        .card:nth-child(odd){
+            margin-right: 4rem;
+        }
+        .card:nth-child(even){
+            margin-right: 0;
+        }
+        .type{
+            padding: 0 3.5rem;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .menu{
+        .card{
+            .info{
+                width: 92.5%;
+                height: 95%;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 640px){
+    .menu{
+        .card{
+            width: 35vw;
+            height: 57vw;
+        }
+        .card:nth-child(odd){
+            margin-right: 2rem;
+        }
+        .card:nth-child(even){
+            margin-right: 0;
+        }
+        .type{
+            padding: 0 2rem;
+        }
+    }
+}
