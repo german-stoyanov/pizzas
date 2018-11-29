@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+.contacts{
+  background-color: aliceblue;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Pacifico', cursive;
+  p{
+    border-bottom: 1px solid gray;
+  }
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  .separator{
+    height: 60vh;
+    width: 2px;
+    background: gray;
+    display: inline-block;
+    margin: 0 2rem;
+  }
+  .about{
+    padding: 1rem;
+    
+    
+  }
+  .partnership{
+    padding: 1rem;
+  }
+}

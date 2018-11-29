@@ -16,6 +16,15 @@
     html{
         font-size: 13px;
     }
+    .contacts{
+        font-size: 1.4rem;
+        .about{
+            width: 42.5%;
+        }
+        .partnership{
+            width: 42.5%;
+        }
+    }
     .menu{
         .card{
             width: 27vw;
@@ -54,7 +63,20 @@
             }
         }
     }
-    
+    .contacts{
+        flex-direction: column;
+        .separator{
+            width: 95%;
+            height: 3px;
+            margin: 2rem 0;
+        }
+        .about{
+            width: 75%;
+        }
+        .partnership{
+            width: 75%;
+        }
+    }
 }
 
 @media screen and (max-width: 640px){
@@ -196,5 +218,9 @@
             padding: 0 2rem;
         }
     }
-    
+    .contacts{
+        .about,.partnership{
+            width: 90%;
+        }
+    }
 }
