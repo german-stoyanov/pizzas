@@ -1,4 +1,5 @@
 @import 'https://use.fontawesome.com/releases/v5.5.0/css/all.css';
+@import 'mixins.scss';
 
 @media screen and (max-width: 1024px){
     html{
@@ -84,23 +85,31 @@
         }
     }
     .nav{
+        
         position: relative;
         .nav-links{
             display: none;
+            li a{
+                font-size: 2rem;
+            }
+            li{
+                margin-bottom: 0.5rem;
+            }
+            li:last-of-type{
+                margin-bottom: 0;
+            }
         }
         i{
             z-index: 1010;
-          }
+        }
           
-          
-          
-          label{
+        label{
             i{
                 display: inline-block;
               position: absolute;
               top: 50%;
               right: 5%;
-              font-size: 1.5rem;
+              font-size: 2.5rem;
               transform: translateY(-50%);
             }
           }
@@ -122,9 +131,15 @@
       #menu-toggle:checked + .nav i:before{
         content: '\f00d';
       }
+
+      #menu-toggle:checked + .nav i{
+          top: 5% !important;
+      }
       
       #menu-toggle:checked + .nav .nav-links{
-        background: #f1f1f1;
+        @include delay;
+        
+        background: #d8d6de;
         z-index: 1001;
         position: absolute;
         top: 0;
@@ -135,6 +150,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+      }
+
+      #menu-toggle:checked + .nav .nav-links li{
+        opacity: 0;
+        animation: menu-in 0.4s linear forwards;
       }
 }
 
