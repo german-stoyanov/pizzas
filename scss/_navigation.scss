@@ -87,9 +87,22 @@
             
             a{
                 color: #19719c;
-                font-size: 1.3rem;
+                font-size: 1.5rem;
                 font-family: 'Indie Flower', cursive;
             }
         }
     }
+    #menu-toggle{
+        display: none;
+
+    }
+   
+        i{
+            display: none;
+        }
+    
+}
+
+#menu-toggle{
+    display: none;
 }

@@ -6,16 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{site.baseurl}}/css/styles.css">
     <link rel="stylesheet" href="{{site.baseurl}}/css/responsive.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
     <title>Document</title>
 </head>
 <body>
     <header>
-        <div class="nav">
+        <input type="checkbox" id="menu-toggle" name="menu-toggle"></input> 
+<div class="nav">
             <a href="/" class="nav-logo">
                 <span>Т</span><span>И</span><span>П</span>
                 <div class="line-r-top"></div>
                 <div class="line-r-down"></div>
             </a>
+            <label id="" for="menu-toggle" name="menu-toggle"><i class="fas fa-bars"></i></label>
             <ul class="nav-links">
                 <li>
                     <a href="{{site.baseurl}}/">Начало</a>
@@ -33,8 +38,6 @@
                     <a href="">Вход</a>
                     <div class="line"></div>
                 </li>
-               
-                
             </ul>
         </div>
     </header>
