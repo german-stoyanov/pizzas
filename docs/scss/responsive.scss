@@ -96,7 +96,7 @@
             }
             .description{
                 font-size: 1.3rem;
-                .logo{
+                .logo:last-of-type{
                     font-size: 1.1rem;
                 }
             }
@@ -107,6 +107,9 @@
         .card{
             width: 60vw;
             height: 93vw;
+            .info{
+                font-size: 1.4rem; 
+            }
         }
         .card:nth-child(odd){
             margin-right: 0;
