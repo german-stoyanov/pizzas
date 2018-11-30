@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 .contacts{
+  grid-template-columns: 1fr 1rem 1fr;
   background-color: aliceblue;
   text-align: center;
   font-size: 1.5rem;
@@ -9,10 +10,10 @@
     border-bottom: 1px solid gray;
   }
   padding: 2rem 3rem;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  
   align-items: center;
-  justify-content: center;
+  justify-items: center;
   .separator{
     height: 60vh;
     width: 2px;
@@ -22,10 +23,11 @@
   }
   .about{
     padding: 1rem;
-    
+    width: 80%
     
   }
   .partnership{
     padding: 1rem;
+    width: 80%;
   }
 }

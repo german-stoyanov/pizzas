@@ -14,6 +14,13 @@
 @import 'menu.scss';
 
 
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
 body{
     padding: 0;

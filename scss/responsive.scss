@@ -18,12 +18,7 @@
     }
     .contacts{
         font-size: 1.4rem;
-        .about{
-            width: 42.5%;
-        }
-        .partnership{
-            width: 42.5%;
-        }
+       
     }
     .menu{
         .card{
@@ -64,7 +59,8 @@
         }
     }
     .contacts{
-        flex-direction: column;
+        grid-template-columns: 80%; 
+        justify-content: center;
         .separator{
             width: 95%;
             height: 3px;
@@ -139,8 +135,12 @@
     #menu-toggle {
         display: none;
       }
+      #menu-toggle:checked + header + .container{
+        display: none;
+     }
       
-      #menu-toggle:checked + .nav{
+      #menu-toggle:checked + header .nav{
+        
         height: auto;
         position: absolute;
         top: 0;
@@ -150,15 +150,15 @@
         z-index: 1000;
       }
       
-      #menu-toggle:checked + .nav i:before{
+      #menu-toggle:checked + header .nav i:before{
         content: '\f00d';
       }
 
-      #menu-toggle:checked + .nav i{
+      #menu-toggle:checked + header .nav i{
           top: 5% !important;
       }
       
-      #menu-toggle:checked + .nav .nav-links{
+      #menu-toggle:checked + header .nav .nav-links{
         @include delay;
         
         background: #d8d6de;
@@ -174,9 +174,13 @@
         justify-content: center;
       }
 
-      #menu-toggle:checked + .nav .nav-links li{
+      #menu-toggle:checked + header .nav .nav-links li{
         opacity: 0;
         animation: menu-in 0.4s linear forwards;
+      }
+
+      .contacts{
+          grid-template-columns: 90%;
       }
 }
 
@@ -219,8 +223,6 @@
         }
     }
     .contacts{
-        .about,.partnership{
-            width: 90%;
-        }
+        grid-template-columns: 100%;
     }
 }
