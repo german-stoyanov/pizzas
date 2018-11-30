@@ -1,9 +1,11 @@
 @import 'https://use.fontawesome.com/releases/v5.5.0/css/all.css';
+@import 'variables.scss';
 @import 'mixins.scss';
 
 @media screen and (max-width: 1024px){
     html{
-        font-size: 14px;
+        font-size: 1.4*$font-size;
+        line-height: $line-height
     }
     .card{
         .info{
@@ -14,11 +16,11 @@
 
 @media screen and (max-width: 960px){
     html{
-        font-size: 13px;
+        font-size: 1.4*$font-size;
+        line-height: $line-height
     }
     .contacts{
         font-size: 1.4rem;
-       
     }
     .menu{
         .card{
@@ -38,13 +40,12 @@
             padding: 0 3.5rem;
         }
     }
-    
 }
 
 @media screen and (max-width: 768px){
     .content{
         .introduction{
-            padding: 2rem;
+            padding: 2.5rem 1.5rem;
             .description{
                 width: 90%;
             }
@@ -77,7 +78,8 @@
 
 @media screen and (max-width: 640px){
     html{
-        font-size: 12px;
+        font-size: 1.4*$font-size;
+        line-height: $line-height
     }
     .menu{
         .card{
@@ -103,7 +105,6 @@
         }
     }
     .nav{
-        
         position: relative;
         .nav-links{
             display: none;
@@ -120,27 +121,25 @@
         i{
             z-index: 1010;
         }
-          
         label{
             i{
-                display: inline-block;
+              display: inline-block;
               position: absolute;
               top: 50%;
               right: 5%;
               font-size: 2.5rem;
               transform: translateY(-50%);
             }
-          }
+        }
     }
     #menu-toggle {
         display: none;
-      }
-      #menu-toggle:checked + header + .container{
+    }
+    #menu-toggle:checked + header + .container{
         display: none;
-     }
+    }
       
-      #menu-toggle:checked + header .nav{
-        
+    #menu-toggle:checked + header .nav{
         height: auto;
         position: absolute;
         top: 0;
@@ -148,19 +147,18 @@
         left: 0;
         right: 0;
         z-index: 1000;
-      }
+    }
       
-      #menu-toggle:checked + header .nav i:before{
+    #menu-toggle:checked + header .nav i:before{
         content: '\f00d';
-      }
+    }
 
-      #menu-toggle:checked + header .nav i{
-          top: 5% !important;
-      }
+    #menu-toggle:checked + header .nav i{
+        top: 5% !important;
+    }
       
-      #menu-toggle:checked + header .nav .nav-links{
+    #menu-toggle:checked + header .nav .nav-links{
         @include delay;
-        
         background: #d8d6de;
         z-index: 1001;
         position: absolute;
@@ -172,16 +170,16 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-      }
+    }
 
-      #menu-toggle:checked + header .nav .nav-links li{
+    #menu-toggle:checked + header .nav .nav-links li{
         opacity: 0;
-        animation: menu-in 0.4s linear forwards;
-      }
+        animation: menu-in 0.5s linear forwards;
+    }
 
-      .contacts{
-          grid-template-columns: 90%;
-      }
+    .contacts{
+        grid-template-columns: 90%;
+    }
 }
 
 
@@ -202,6 +200,15 @@
                 }
             }
             
+        }
+        .gallery-container{
+            div{
+                .hover{
+                    .btn{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
         }
     }
     .menu{

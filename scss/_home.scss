@@ -12,7 +12,7 @@
     }
     .introduction{
         position: relative;
-        height: 50vh;
+        
         background-size: cover;
         background-position: center;
         padding: 4rem;
@@ -90,10 +90,11 @@
             img{
                 margin: 0;
             }
+            
             div:first-of-type img{
                 border: 1.5rem solid #0b5555;
-                height: 48vw;
-                max-height: 27.5rem;
+                height: 56vw;
+                max-height: 31.5rem;
                 width: auto;
             }
             div:nth-child(2) img{
@@ -107,6 +108,7 @@
                 position: relative;
                 
                 &:hover{
+                    
                     .hover{
                         opacity: 1;
                     }
@@ -123,17 +125,9 @@
                     align-items: center;
                     justify-content: center;
                     transition: opacity 0.3s ease;
-                    a{
-                        &:hover{
-                            background: #171817e8;
-                            
-                        }
-                        padding: 0.6rem 1.5rem;
-                        border-radius: 0.9rem;
-                        background: #575c57e8;
-                        color: white;
-                        transition: background 0.2s ease-in;
-                        text-decoration: none;
+                    .btn{
+                        font-size: 2rem;
+                        font-family: 'Pacifico', cursive;
                     }
                 }
                 
